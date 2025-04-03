@@ -6,3 +6,44 @@ The internnet was developed in late  1960s by the US department as a means to cr
 The internet works by connecting computers and other devices by using a set of standardised protocols. these protocols define how information is transmitted and exchanged between devices and ensure that data is transmitted securely and reliably.
 
 When I send data over the internet, it is broken up into small packets, these packets are sent from my own device to a router, the router examines the packets and send it to another router next to it, these process would continue until it reaches its final destination
+I WANT TO ADD A DIAGRAM HERE....
+
+Remember I said the internet uses a set of protocols, these protocols include INTERNET PROTOCOL (IP) and Transmission Control Protocol(TCP). the ip is responsibke for routing packets to their correct destination while the tcp ensures that the packets are transmitted securely and in correct order...
+other protocols include DNS, HTTP/HTTPS, SSL....
+
+DEFINITION OF TERMS
+Packet: A small unit of data that is transmitted over the internet.
+
+Router: A device that directs packets of data between different networks.
+
+IP Address: A unique identifier assigned to each device on a network, used to route data to the correct destination.
+
+Domain Name: A human-readable name that is used to identify a website, such as google.com.
+
+DNS: The Domain Name System is responsible for translating domain names into IP addresses.
+
+HTTP: The Hypertext Transfer Protocol is used to transfer data between a client (such as a web browser) and a server (such as a website).
+
+HTTPS: An encrypted version of HTTP that is used to provide secure communication between a client and server.
+SSL/TLS: The Secure Sockets Layer and Transport Layer Security protocols are used to provide secure communication over the internet.
+
+How to Secure Internet Communication with SSL/TLS
+
+Certificates: SSL/TLS certificates are used to establish trust between the client and server. They contain information about the identity of the server and are signed by a trusted third party (a Certificate Authority) to verify their authenticity.
+
+Handshake: During the SSL/TLS handshake process, the client and server exchange information to negotiate the encryption algorithm and other parameters for the secure connection.
+
+Encryption: Once the secure connection is established, data is encrypted using the agreed-upon algorithm and can be transmitted securely between the client and server.
+
+**Emerging Trends and Technologies**
+5G: 5G is the latest generation of mobile network technology, offering faster speeds, lower latency, and greater capacity than previous generations. 
+
+Internet of Things (IoT): IoT refers to the network of physical devices, vehicles, home appliances, and other objects that are connected to the internet and can exchange data. As IoT continues to grow, it is expected to revolutionize industries such as healthcare, transportation, and manufacturing.
+
+Artificial Intelligence (AI): AI technologies such as machine learning and natural language processing are already being used to power a wide range of applications and services, from voice assistants to fraud detection. 
+
+Blockchain: Blockchain is a distributed ledger technology that enables secure, decentralized transactions. It is being used to power a wide range of applications, from cryptocurrency to supply chain management.
+
+Edge computing: Edge computing refers to the processing and storage of data at the edge of the network, rather than in centralized data centers. It is expected to enable new use cases and applications, such as real-time analytics and low-latency applications
+
+Concluded

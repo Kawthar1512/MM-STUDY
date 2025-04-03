@@ -1,0 +1,8 @@
+Studied about how the internet works
+    We can't learn about how the internet works without understanding what a network is.
+
+A network is a group of computers or devices connected to each other..The networks connected to each other is what forms the internet. In literal meaning, Internet is a network of networks. 
+The internnet was developed in late  1960s by the US department as a means to create a decentralized communication network that could withstand nuclear attacks and it's been evoloving ever since.
+The internet works by connecting computers and other devices by using a set of standardised protocols. these protocols define how information is transmitted and exchanged between devices and ensure that data is transmitted securely and reliably.
+
+When I send data over the internet, it is broken up into small packets, these packets are sent from my own device to a router, the router examines the packets and send it to another router next to it, these process would continue until it reaches its final destination

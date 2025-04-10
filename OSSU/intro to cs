@@ -8,3 +8,15 @@ algorithm complexity
 
 ---------------
 when you encounter a problem, first question should be bo to mathematically solve the problem
+Introduction to programming
+-types of knowledge
+1. Declarative knowledge (statement of fact)
+2. Imperative knowledge a recipe, how-to do something
+ my research...
+ 
+So we'd say Programming is about writing recipes to generate facts... Basically, when i write a program, i'm creating a recipe that the computer will follow to process data or perform a function.
+
+Algorithms are recipes/ recipes are algorithm e.g step by step on how to bake a cake
+
+Computers are MACHINES that execute algorithms 
+Question here.... I dont understand the calculation in the memory diagram

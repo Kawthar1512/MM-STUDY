@@ -20,3 +20,20 @@ Algorithms are recipes/ recipes are algorithm e.g step by step on how to bake a 
 
 Computers are MACHINES that execute algorithms 
 Question here.... I dont understand the calculation in the memory diagram
+
+Basic primtives
+1. Turing showed that you can compute anything with a very simple machine with only 6 primitives: left, right, print, scan, erase no op
+2. real programming languages have 
+ - more convenient set of primitives
+ - ways to combine primitives to create new primitves
+3. Anything computable in one language is computable in any other programming language
+
+Aspects of languages
+Semantics - the meaning associated with a syntatically correct string of symbols with no static semantic errors
+programn have only one meaning, there are no multiple meaning.. it follows the instruction and does what it needs to do.
+
+ERRORS-
+1. SYNTACTIC ERROR - 
+2. STATIC SEMANTICC ERROR
+3. NO LINGUISTIC ERROR
+SEMANTIU

@@ -21,7 +21,7 @@ Algorithms are recipes/ recipes are algorithm e.g step by step on how to bake a 
 Computers are MACHINES that execute algorithms 
 Question here.... I dont understand the calculation in the memory diagram
 
-Basic primtives
+Basic primitives
 1. Turing showed that you can compute anything with a very simple machine with only 6 primitives: left, right, print, scan, erase no op
 2. real programming languages have 
  - more convenient set of primitives

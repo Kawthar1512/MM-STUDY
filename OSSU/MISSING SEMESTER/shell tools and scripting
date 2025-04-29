@@ -1,0 +1,32 @@
+Shell scripting
+
+defining a variable in Shell
+
+foo=bar
+we can access the value by
+echo  $foo
+
+strings can be defined in two ways
+single and double
+single (') - literal string, it will not substitute variable values
+double (") - delimited string, this will substitute values
+Example
+foo=bar
+echo 'Hi there'
+#this will print, Hi there
+
+echo "Hi there $foo"
+#this will print, Hi there bar
+
+echo 'Hi there $foo'
+# this will print Hi there $foo
+
+
+mcd () {
+    mkdir -p "$1"
+    cd "$1"
+}
+
+$? - returns error code in the video
+
+

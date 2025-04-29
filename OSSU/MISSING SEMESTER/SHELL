@@ -1,0 +1,66 @@
+A shell- a textual  interface to give computer commannd, to open a shell prompt, we need a terminal. EXAMPLES-Bash, Zsh, Fish, and PowerShell. 
+TERMINAL
+A terminal provides a text-based interface to interact with a shell, which is a command interpreter that executes user commands. Examples of common terminals include the GNOME Terminal on Linux, the Terminal app on macOS, and the Command Prompt on Windows. 
+
+when a terminal is newly launched
+it shows missing:~$
+missing - means you are on the machine
+~ - current working directory (short for home)
+$- tells you that you are not the root user
+we can type date and its going output today's date
+the shell is a programming environment, it has variables, conditionals, loops and functions.. writing command on the shell is like writing a small bit of code.. If the shell is asked to execute a command that doesn’t match one of its programming keywords, it consults an environment variable called $PATH that lists which directories the shell should search for programs when it is given a command.
+A path on the shell is a delimited list of directories; separated by / on Linux and macOS and \ on Windows.
+/: root of the file system under which all directories and files lie(linux & Macos)
+C:\- one root for each partition (on windows)
+
+Navigating the shell in MacOs/Linux
+A path that starts with / is called an absolute path. Any other path is a relative path. Relative paths are relative to the current working directory, which we can see with the pwd command and change with the cd command. In a path, . refers to the current directory, and .. to its parent directory:
+. - refers to the current directory
+.. - refers to the its parent directory
+
+To see what lives in a given directory, we use the ls command
+Unless a directory is given as its first argument, ls will print the contents of the current directory. Most commands accept flags and options (flags with values) that start with - to modify their behavior. Usually, running a program with the -h or --help flag will print some help text that tells you what flags and options are available.
+
+mv - (to rename/move a file)
+cp  - (to copy a file)
+mkdir - (to make a new directory).
+echo $ECHO - to check the shell runing (zsh or bash).
+
+NAME
+     touch – change file access and modification times
+
+SYNOPSIS
+     touch [-A [-][[hh]mm]SS] [-achm] [-r file] [-t [[CC]YY]MMDDhhmm[.SS]]
+           [-d YYYY-MM-DDThh:mm:SS[.frac][tz]] file ...
+
+DESCRIPTION
+     The touch utility sets the modification and access times of files.  If
+     any file does not exist, it is created with default permissions.
+
+     By default, touch changes both modification and access times.  The -a and
+     -m flags may be used to select the access time or the modification time
+     individually.  Selecting both is equivalent to the default.  By default,
+     the timestamps are set to the current time.  The -d and -t flags
+     explicitly specify a different time, and the -r flag specifies to set the
+     times those of the specified file.  The -A flag adjusts the values by a
+     specified amount.
+
+     The following options are available:
+
+     -A      Adjust the access and modification time stamps for the file by
+:
+----------
+ The -rw------- part means:
+
+It’s a regular file (-)
+
+Owner has read (r) and write (w) permission
+
+But no execute (x) permission
+
+
+
+Question on this
+1. missing:~$ ls -l /home
+drwxr-xr-x 1 missing  users  4096 Jun 15  2019 missing
+2. if i want to go back to the root directory, do i have to keep pressing ccd..

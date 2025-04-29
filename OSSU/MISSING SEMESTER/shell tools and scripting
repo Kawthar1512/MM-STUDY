@@ -29,4 +29,23 @@ mcd () {
 
 $? - returns error code in the video
 
+Image conversion in shell scripting
+you can convert image from one format to another
+example
+magick convert image.png image.jpg
+or
+
+magick image.{png,jpg}
+
+VIM
+Vim - Vi Improved
+# Open a file - vim myfile.txt
+    If the file exixts, it opens, if its not, it creates a new file
+# Insert Mode (to enable typing directly into the file)  - i
+# Exit Insert Mode/ stop typing - esc
+# How to save file  - :w
+# To quit the file - :q
+
+
+
 

@@ -37,7 +37,8 @@ or
 
 magick image.{png,jpg}
 
-VIM
+VIM 
+vim is a modal editor 
 Vim - Vi Improved
 # Open a file - vim myfile.txt
     If the file exixts, it opens, if its not, it creates a new file

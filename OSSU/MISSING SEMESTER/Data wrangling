@@ -1,2 +1,86 @@
 the bbasicc idea of data wrangling is changing format of data to another format
-  
+Data wranglingc in simple terms, is the process of cleaning, 
+organizing, and transforming raw data into a format that is easier to understand and use
+Data wrangling = turning messy data into useful data
+
+grep to find matching text
+
+sed to clean or replace text
+
+awk to process lines of data
+
+sort, uniq, etc., to analyze patterns
+data wrangling in  missing semester
+ What Is Data Wrangling (in Shell)
+Data wrangling means transforming raw data into a more useful format.
+
+For example:
+
+journalctl | grep -i intel
+this will  extract lines from the system log that mention “intel”, which is a form of filtering and reformatting — i.e., wrangling.
+
+Tools and Techniques
+1. ssh + journalctl + grep
+Used to view remote system logs and filter them:
+ssh myserver 'journalctl | grep sshd | grep "Disconnected from"'
+
+Filters log entries remotely before sending them back, saving bandwidth.
+Use ' around remote command to prevent local shell from interpreting it.
+
+2. sed — Stream Editor
+Used to substitute or transform parts of text using regular expressions:
+
+sed -E 's/.*Disconnected from (invalid |authenticating )?user (.*) [^ ]+ port [0-9]+( \[preauth\])?$/\2/'
+s/REGEX/SUBSTITUTION/ is the format.
+
+.* is greedy; .*? is non-greedy (but only supported in perl, not in sed).
+-E enables extended regex in sed.
+
+3. sort + uniq -c
+Used for frequency analysis:
+
+sort | uniq -c | sort -nk1,1 | tail -n10
+
+uniq -c counts consecutive duplicates.
+sort -n -k1,1 sorts numerically by count.
+tail -n10 shows the top 10 most frequent usernames.
+
+4. awk — Pattern-Action Text Processor
+Used for field-level filtering and reporting:
+
+awk '{ print $2 }'        # prints the second field (username)
+awk '$1 == 1'             # only rows where count == 1
+awk '$2 ~ /^c.*e$/'       # usernames that start with 'c' and end with 'e'
+Supports:
+BEGIN {} for setup
+
+{} for per-line actions
+
+END {} for final operations
+
+Can replace grep, sed, and more if needed.
+
+5. paste -sd,
+Used to turn lines into a comma-separated list:
+
+... | awk '{ print $2 }' | paste -sd,
+📊 Data Analysis Example
+You can use wc -l to count matching lines:
+
+awk '$1 == 1 && $2 ~ /^c[^ ]*e$/' | wc -l
+Or use full awk script:
+
+awk '
+BEGIN { rows = 0 }
+$1 == 1 && $2 ~ /^c[^ ]*e$/ { rows += $1 }
+END { print rows }
+
+Practical Uses:
+Security auditing (e.g., failed SSH login attempts).
+
+Log monitoring and alerting.
+
+Data cleanup for configuration files.
+
+Quick analytics right from your terminal.
+
